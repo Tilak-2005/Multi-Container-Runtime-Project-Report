@@ -162,6 +162,8 @@ sudo rmmod monitor
 ### 🧼 Screenshot 8: Clean Teardown
 
 ![Screenshot 8](screenshots/8.png)
+![Screenshot 8](screenshots/8.1.png)
+![Screenshot 8](screenshots/8.2.png)
 *System cleanup without leaks or zombie processes.*
 
 ---
