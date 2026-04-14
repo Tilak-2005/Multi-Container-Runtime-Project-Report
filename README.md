@@ -259,28 +259,4 @@ This project demonstrates:
 * IPC
 * CPU scheduling
 
----
-
-## 📝 How to Use
-
-1. Clone repo
-
-```bash
-git clone https://github.com/Tilak-2005/Multi-Container-Runtime-Project-Report.git
-cd Multi-Container-Runtime-Project-Report
-```
-
-2. Follow build steps above
-
----
-
-## ⭐ Final Note
-
-This is a **complete, submission-ready OS project** with:
-
-* Practical implementation
-* Kernel interaction
-* Real system behavior demonstration
-
----
-
+--
