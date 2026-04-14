@@ -110,6 +110,7 @@ sudo rmmod monitor
 
 ### 🖥️ Screenshot 1: Multi-container Supervision
 ![Screenshot 0](screenshots/0.png)
+![Screenshot 4](screenshots/4.png)
 ![Screenshot 1](screenshots/1.png)
 *Two containers running simultaneously under one supervisor.*
 
@@ -153,6 +154,7 @@ sudo rmmod monitor
 ### ⚙️ Screenshot 7: Scheduling Experiment
 
 ![Screenshot 7](screenshots/7.1.png)
+![Screenshot 7](screenshots/7.png)
 *Comparison of CPU-bound vs I/O-bound workloads.*
 
 ---
