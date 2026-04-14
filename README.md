@@ -19,53 +19,53 @@ sudo apt install -y build-essential linux-headers-$(uname -r)
 2.2 Preflight Check
 bash
 
-chmod +x environment-check.sh
-sudo ./environment-check.sh
+**chmod +x environment-check.sh
+sudo ./environment-check.sh```**
 
 2.3 Prepare Alpine Root Filesystem
 bash
 
-mkdir rootfs-base
+**mkdir rootfs-base
 wget https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-minirootfs-3.20.3-x86_64.tar.gz
-sudo tar -xzf alpine-minirootfs-3.20.3-x86_64.tar.gz -C rootfs-base
+sudo tar -xzf alpine-minirootfs-3.20.3-x86_64.tar.gz -C rootfs-base```***
 
 2.4 Build the Project
 bash
 
-make clean
-make all
+**make clean
+make all```**
 
 2.5 Create Per-Container Rootfs and Copy Workloads
 bash
 
-sudo cp -a ./rootfs-base ./rootfs-alpha
+**sudo cp -a ./rootfs-base ./rootfs-alpha
 sudo cp -a ./rootfs-base ./rootfs-beta
 
 sudo cp workload_cpu workload_io workload_mem ./rootfs-alpha/
-sudo cp workload_cpu workload_io ./rootfs-beta/
+sudo cp workload_cpu workload_io ./rootfs-beta/```**
 
 2.6 Load Kernel Module and Start Supervisor
 
 Terminal 1:
 bash
 
-sudo insmod monitor.ko
-sudo ./engine supervisor ./rootfs-base
+**sudo insmod monitor.ko
+sudo ./engine supervisor ./rootfs-base```**
 
 2.7 Run CLI Commands (Terminal 2)
 bash
 
-sudo ./engine start demo1 ./rootfs-alpha /bin/sleep 60
+**sudo ./engine start demo1 ./rootfs-alpha /bin/sleep 60
 sudo ./engine start demo2 ./rootfs-beta /bin/sleep 60
 sudo ./engine ps
 sudo ./engine logs demo1
-sudo ./engine stop demo1
+sudo ./engine stop demo1```**
 
 2.8 Teardown
 bash
 
 # Terminal 1: Ctrl+C
-sudo rmmod monitor
+**sudo rmmod monitor```**
 
 3. Demo with Screenshots
 ### Screenshot 1: Multi-container Supervision
