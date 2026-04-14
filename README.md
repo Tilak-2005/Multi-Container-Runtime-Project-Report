@@ -1,8 +1,8 @@
 # Multi-Container-Runtime-Project-Report
 Team Members:
-Name	SRN
-[Tilak Kumta]	[PES1UG24CS696]
-[ArjunJAagli]	[PES1UG24CS717]
+# Name	SRN
+# Tilak Kumta	PES1UG24CS696
+# Arjun Jagli	PES1UG24CS717
 
 Course: Operating Systems
 Date: April 2026
